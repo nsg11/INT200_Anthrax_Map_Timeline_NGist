@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_59108263206e212a757ff017adb980dd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_59108263206e212a757ff017adb980dd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_59108263206e212a757ff017adb980dd = L.map(
+                "map_59108263206e212a757ff017adb980dd",
+                {
+                    center: [37.8, -96.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9fe1af63902776095497e803b23f98fc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9fe1af63902776095497e803b23f98fc.addTo(map_59108263206e212a757ff017adb980dd);
+        
+    
+            var marker_8e72eca2079dbf7c113e139a6c5e0d22 = L.marker(
+                [40.3487, -74.6598],
+                {
+}
+            ).addTo(map_59108263206e212a757ff017adb980dd);
+        
+    
+        var popup_9d855e80f1f1c5672703330b8f5c285e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_829ebcbb6324e607be1d32e9353dfafc = $(`<div id="html_829ebcbb6324e607be1d32e9353dfafc" style="width: 100.0%; height: 100.0%;"><b>10 Nassau Street, Princeton, NJ</b><br>2001-09-18: The first letters containing anthrax are mailed.</div>`)[0];
+                popup_9d855e80f1f1c5672703330b8f5c285e.setContent(html_829ebcbb6324e607be1d32e9353dfafc);
+            
+        
+
+        marker_8e72eca2079dbf7c113e139a6c5e0d22.bindPopup(popup_9d855e80f1f1c5672703330b8f5c285e)
+        ;
+
+        
+    
+    
+            marker_8e72eca2079dbf7c113e139a6c5e0d22.bindTooltip(
+                `<div>
+                     10 Nassau Street, Princeton, NJ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5b7c971c74d9bcf57ffd097e437b8893 = L.marker(
+                [26.3587, -80.0831],
+                {
+}
+            ).addTo(map_59108263206e212a757ff017adb980dd);
+        
+    
+        var popup_77fbd2c0b4de465cb8984de7ba097511 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e11431e554d4b4f70d995733695174d0 = $(`<div id="html_e11431e554d4b4f70d995733695174d0" style="width: 100.0%; height: 100.0%;"><b>Boca Raton, FL</b><br>2001-09-19: Robert Stevens handled an anthrax-contaminated letter.<br>2001-09-28: Stevens hospitalized.<br>2001-10-05: Stevens died.</div>`)[0];
+                popup_77fbd2c0b4de465cb8984de7ba097511.setContent(html_e11431e554d4b4f70d995733695174d0);
+            
+        
+
+        marker_5b7c971c74d9bcf57ffd097e437b8893.bindPopup(popup_77fbd2c0b4de465cb8984de7ba097511)
+        ;
+
+        
+    
+    
+            marker_5b7c971c74d9bcf57ffd097e437b8893.bindTooltip(
+                `<div>
+                     Boca Raton, FL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b198607698335b31e475dc1787ca86db = L.marker(
+                [40.7128, -74.006],
+                {
+}
+            ).addTo(map_59108263206e212a757ff017adb980dd);
+        
+    
+        var popup_71371b4c2cc600a7e88eb0ff6c55f402 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d187c25b2c45f6d1059522eb11c36ef = $(`<div id="html_6d187c25b2c45f6d1059522eb11c36ef" style="width: 100.0%; height: 100.0%;"><b>New York City, NY</b><br>2001-09-21: Johanna Huden noticed symptoms.<br>2001-10-10: NBC employee tested positive.<br>2001-10-12: Erin O’Connor developed anthrax.</div>`)[0];
+                popup_71371b4c2cc600a7e88eb0ff6c55f402.setContent(html_6d187c25b2c45f6d1059522eb11c36ef);
+            
+        
+
+        marker_b198607698335b31e475dc1787ca86db.bindPopup(popup_71371b4c2cc600a7e88eb0ff6c55f402)
+        ;
+
+        
+    
+    
+            marker_b198607698335b31e475dc1787ca86db.bindTooltip(
+                `<div>
+                     New York City, NY
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c8c0a6e53daf445394423411ef2400a7 = L.marker(
+                [40.755, -73.984],
+                {
+}
+            ).addTo(map_59108263206e212a757ff017adb980dd);
+        
+    
+        var popup_19c7c139ebd6638cc017feb76598948c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4d96a265e5b04d9343afd61ac9a893d = $(`<div id="html_e4d96a265e5b04d9343afd61ac9a893d" style="width: 100.0%; height: 100.0%;"><b>NBC Office, New York City, NY</b><br>2001-09-25: Erin O’Connor handled a threatening letter postmarked from Trenton.</div>`)[0];
+                popup_19c7c139ebd6638cc017feb76598948c.setContent(html_e4d96a265e5b04d9343afd61ac9a893d);
+            
+        
+
+        marker_c8c0a6e53daf445394423411ef2400a7.bindPopup(popup_19c7c139ebd6638cc017feb76598948c)
+        ;
+
+        
+    
+    
+            marker_c8c0a6e53daf445394423411ef2400a7.bindTooltip(
+                `<div>
+                     NBC Office, New York City, NY
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e7a38466a9d4f0582983e2d0147250ea = L.marker(
+                [40.2116, -74.6963],
+                {
+}
+            ).addTo(map_59108263206e212a757ff017adb980dd);
+        
+    
+        var popup_19dd6b10dc1c31ca7b543789b700c25d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_206cb4f536757e36454eb7165ae82913 = $(`<div id="html_206cb4f536757e36454eb7165ae82913" style="width: 100.0%; height: 100.0%;"><b>Hamilton Township, NJ</b><br>2001-09-26: Postal worker Richard Morgano developed cutaneous anthrax.</div>`)[0];
+                popup_19dd6b10dc1c31ca7b543789b700c25d.setContent(html_206cb4f536757e36454eb7165ae82913);
+            
+        
+
+        marker_e7a38466a9d4f0582983e2d0147250ea.bindPopup(popup_19dd6b10dc1c31ca7b543789b700c25d)
+        ;
+
+        
+    
+    
+            marker_e7a38466a9d4f0582983e2d0147250ea.bindTooltip(
+                `<div>
+                     Hamilton Township, NJ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0bac80450c80527ffff867ef8f21d963 = L.marker(
+                [26.3571, -80.0831],
+                {
+}
+            ).addTo(map_59108263206e212a757ff017adb980dd);
+        
+    
+        var popup_49366bef0712d055a447c9a47c85a67b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9217b74e6db979f0552d25caa4c23a57 = $(`<div id="html_9217b74e6db979f0552d25caa4c23a57" style="width: 100.0%; height: 100.0%;"><b>American Media Inc., Boca Raton, FL</b><br>2001-10-08: FBI launched a criminal investigation; anthrax found in the building.</div>`)[0];
+                popup_49366bef0712d055a447c9a47c85a67b.setContent(html_9217b74e6db979f0552d25caa4c23a57);
+            
+        
+
+        marker_0bac80450c80527ffff867ef8f21d963.bindPopup(popup_49366bef0712d055a447c9a47c85a67b)
+        ;
+
+        
+    
+    
+            marker_0bac80450c80527ffff867ef8f21d963.bindTooltip(
+                `<div>
+                     American Media Inc., Boca Raton, FL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a25ed99207420829f3d80713876e8dac = L.marker(
+                [38.8903, -77.0091],
+                {
+}
+            ).addTo(map_59108263206e212a757ff017adb980dd);
+        
+    
+        var popup_ca530a612a7695f5eda15e502a1e5ca9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4cf423e285ac24dfc1efb64f305f6dd = $(`<div id="html_a4cf423e285ac24dfc1efb64f305f6dd" style="width: 100.0%; height: 100.0%;"><b>The Hart Senate Office Building, Washington, D.C.</b><br>2001-10-16: Senator Tom Daschle’s office received a letter containing anthrax spores.</div>`)[0];
+                popup_ca530a612a7695f5eda15e502a1e5ca9.setContent(html_a4cf423e285ac24dfc1efb64f305f6dd);
+            
+        
+
+        marker_a25ed99207420829f3d80713876e8dac.bindPopup(popup_ca530a612a7695f5eda15e502a1e5ca9)
+        ;
+
+        
+    
+    
+            marker_a25ed99207420829f3d80713876e8dac.bindTooltip(
+                `<div>
+                     The Hart Senate Office Building, Washington, D.C.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_78d28f1995579444c0c1a78fb0d78cbf = L.marker(
+                [38.9276, -76.9939],
+                {
+}
+            ).addTo(map_59108263206e212a757ff017adb980dd);
+        
+    
+        var popup_d547557e2b5a43cedf2ef8b827ef7b25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79881e9c89e6a6c62b158f5b7f7572b2 = $(`<div id="html_79881e9c89e6a6c62b158f5b7f7572b2" style="width: 100.0%; height: 100.0%;"><b>Brentwood Mail Facility, Washington, D.C.</b><br>2001-10-19: Workers developed inhalation anthrax.<br>2001-10-22: Facility closed after two deaths.</div>`)[0];
+                popup_d547557e2b5a43cedf2ef8b827ef7b25.setContent(html_79881e9c89e6a6c62b158f5b7f7572b2);
+            
+        
+
+        marker_78d28f1995579444c0c1a78fb0d78cbf.bindPopup(popup_d547557e2b5a43cedf2ef8b827ef7b25)
+        ;
+
+        
+    
+    
+            marker_78d28f1995579444c0c1a78fb0d78cbf.bindTooltip(
+                `<div>
+                     Brentwood Mail Facility, Washington, D.C.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_64ce4cdec4d4168870c81d0374007dc9 = L.marker(
+                [39.6243, -77.4163],
+                {
+}
+            ).addTo(map_59108263206e212a757ff017adb980dd);
+        
+    
+        var popup_d53b9c52bdfaa65313f293163f02f76b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57e9e6e11f764e2d0d1d3d044db06c55 = $(`<div id="html_57e9e6e11f764e2d0d1d3d044db06c55" style="width: 100.0%; height: 100.0%;"><b>Fort Detrick, MD</b><br>2002-04-01: Spores traced to Bruce Ivins’ office.<br>2010-04-01: FBI confirmed spores originated here.</div>`)[0];
+                popup_d53b9c52bdfaa65313f293163f02f76b.setContent(html_57e9e6e11f764e2d0d1d3d044db06c55);
+            
+        
+
+        marker_64ce4cdec4d4168870c81d0374007dc9.bindPopup(popup_d53b9c52bdfaa65313f293163f02f76b)
+        ;
+
+        
+    
+    
+            marker_64ce4cdec4d4168870c81d0374007dc9.bindTooltip(
+                `<div>
+                     Fort Detrick, MD
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_994d5f80ab3b4b91f203b528a526ce83 = L.marker(
+                [41.4334, -73.1168],
+                {
+}
+            ).addTo(map_59108263206e212a757ff017adb980dd);
+        
+    
+        var popup_5b14cbdc96cda036c36133cab27ec93f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14479592916a32e2406af9445a58eca8 = $(`<div id="html_14479592916a32e2406af9445a58eca8" style="width: 100.0%; height: 100.0%;"><b>Oxford, CT</b><br>2001-11-21: Ottilie Lundgren, 94, became the fifth person to die from inhalation anthrax.</div>`)[0];
+                popup_5b14cbdc96cda036c36133cab27ec93f.setContent(html_14479592916a32e2406af9445a58eca8);
+            
+        
+
+        marker_994d5f80ab3b4b91f203b528a526ce83.bindPopup(popup_5b14cbdc96cda036c36133cab27ec93f)
+        ;
+
+        
+    
+    
+            marker_994d5f80ab3b4b91f203b528a526ce83.bindTooltip(
+                `<div>
+                     Oxford, CT
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
